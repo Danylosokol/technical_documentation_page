@@ -1,32 +1,52 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', 'PT Sans', 'Roboto', 'Lato', Arial, sans-serif;
 }
 
 html, body{
   width: 100vw;
   height: 100%;
   overflow: hidden;
+  font-size: 62.5%;
 }
 
-#content{
-  height: 100%;
-}
-
-#nav-bar{
+#navbar{
   float: left;
-  width: 30%;
+  width: 30rem;
   height: 100%;
   box-sizing: border-box;
-  overflow: auto;
-  padding: 1rem;
+  overflow: hidden;
+}
+
+#navbar ul{
+  font-size: 1.5rem;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+#navbar li{
+  box-sizing: border-box;
+  padding: 1em 2em;
+  background-color: yellow;
+}
+
+#navbar header{
+  background-color: red;
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 0 1rem 2rem;
+  font-size: 3rem;
 }
 
 #main-doc{
   float: left;
-  width: 70%;
+  width: calc(100% - 30rem);
   height: 100%;
   box-sizing: border-box;
   overflow: auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
